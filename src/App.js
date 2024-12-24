@@ -13,7 +13,7 @@ function App() {
     if (event.key === 'Enter') {
       axios.get(url).then((response) => {
         setData(response.data)
-        console.log(response.data)
+        // console.log(response.data)
       })
       setLocation('')
     }
@@ -33,7 +33,7 @@ function App() {
       </div>
 
       <div className='container'>
-      <div className="top">
+        <div className="top">
           <div className="location">
             <p>{data.name}</p>
           </div>
